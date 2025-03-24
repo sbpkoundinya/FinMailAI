@@ -1,1 +1,35 @@
+@startuml Financial Email Classification Flow
 
+start
+:Receive .eml file;
+partition Parse {
+  :Extract headers;
+  :Separate body/attachments;
+  :Decode MIME parts;
+}
+
+partition Process {
+  if (Has attachments?) then (yes)
+    :OCR processing;
+    :Extract financial entities;
+  else (no)
+  endif
+  :Combine all text content;
+}
+
+partition Classify {
+  :Send to OpenAI;
+  :Parse JSON response;
+  :Validate classification;
+}
+
+partition Route {
+  :Determine ServiceNow group;
+  :Calculate SLA;
+  :Generate recommendations;
+}
+
+:Create ServiceNow ticket;
+stop
+
+@enduml

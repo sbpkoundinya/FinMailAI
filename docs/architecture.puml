@@ -1,0 +1,19 @@
+@startuml
+component "FastAPI" as api {
+    component "Email Parser"
+    component "Classifier"
+    component "ServiceNow Adapter"
+}
+
+database "PostgreSQL" as db
+queue "Redis" as queue
+external "ServiceNow" as snow
+external "OpenAI" as ai
+
+api --> ai : Classification
+api --> snow : Ticket Creation
+api --> db : Metadata Storage
+api --> queue : Async Tasks
+
+note right of api: Processes 100+ emails/minute
+@enduml
