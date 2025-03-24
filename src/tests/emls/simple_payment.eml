@@ -1,0 +1,11 @@
+MIME-Version: 1.0
+From: payments@corp.com
+To: treasury@bank.com
+Subject: Payment Notification - INV-789
+Content-Type: text/plain
+
+Please process USD 250,000.00 payment to:
+Account: XX-123456
+SWIFT: ABCDUSXX
+Value Date: 2023-11-15
+Reference: INV-789

@@ -1,0 +1,17 @@
+MIME-Version: 1.0
+From: statements@bank.com 
+To: accounting@client.com
+Subject: November Account Statement
+Content-Type: multipart/mixed; boundary="boundary456"
+
+--boundary456
+Content-Type: text/plain
+
+Please find scanned statement for account XX-987654
+
+--boundary456
+Content-Type: image/jpeg
+Content-Disposition: attachment; filename="statement_nov.jpg"
+
+[JPEG binary data]
+--boundary456--

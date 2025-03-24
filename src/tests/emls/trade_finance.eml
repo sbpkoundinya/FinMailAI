@@ -1,1 +1,23 @@
+MIME-Version: 1.0
+From: trade@client.com 
+To: operations@bank.com
+Subject: LC Amendment Request - PO 456
+Content-Type: multipart/mixed; boundary="boundary123"
 
+--boundary123
+Content-Type: text/plain
+
+Requesting amendment to LC #45678:
+- New amount: USD 1,250,000.00
+- New expiry: 2024-03-31
+
+Attachments:
+1. Signed amendment request
+2. Revised proforma invoice
+
+--boundary123
+Content-Type: application/pdf
+Content-Disposition: attachment; filename="amendment.pdf"
+
+[PDF binary data]
+--boundary123--
