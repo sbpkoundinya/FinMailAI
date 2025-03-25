@@ -68,10 +68,10 @@ SNOW_PASSWORD=your_password
 
 ```
         [E2E] 10%
-       /      \
-   [Integration] 20%
-      /          \
-[Unit Tests]    70%
+       /         \
+   [Integration]  20%
+      /             \
+[Unit Tests]        70%
 ```
 
 ## Logging Strategy
