@@ -10,29 +10,20 @@ An AI-powered pipeline that:
 4. Automates ServiceNow ticketing with SLA-based routing
 
 ## Key Features
-<img width="485" alt="image" src="https://github.com/user-attachments/assets/1c4599cd-5e15-4162-a55d-bc86ea7292a5" />
+-> Email Classification: Categorizes emails into request and sub-request types.
+-> Field Extraction: Extracts key financial data from email body and attachments.
+-> Duplicate Detection: Identifies and flags duplicate emails.
+-> Confidence Scoring: Provides a confidence score for each classification.
+-> Dynamic Priority Source Handling: Determines whether to extract data from the email body, attachment, or both.
 
 ## Tech Stack
 <img width="425" alt="image" src="https://github.com/user-attachments/assets/a7ac7390-9c76-4858-a0fd-6f3bf555957d" />
 
 ## Dependencies
-fastapi==0.95.2
-openai==0.27.8
-pytesseract==0.3.10
-pdf2image==1.16.3
-transformers==4.30.0
-requests==2.31.0
-python-dotenv==1.0.0
-
-## Prerequisites
-
-```bash
-# Ubuntu
-sudo apt-get install tesseract-ocr poppler-utils libtesseract-dev
-
-# MacOS
-brew install tesseract poppler
-```
+Python 3.10+
+pip
+virtualenv
+OpenAI API key (for classification logic)
 
 ## Docker Deployment
 
