@@ -14,14 +14,7 @@ An AI-powered pipeline that:
 <img width="485" alt="image" src="https://github.com/user-attachments/assets/1c4599cd-5e15-4162-a55d-bc86ea7292a5" />
 
 ## Tech Stack
-
-graph LR
-    A[FastAPI] --> B[OpenAI GPT-4]
-    A --> C[Tesseract OCR]
-    A --> D[LayoutLMv3]
-    A --> E[ServiceNow REST]
-    F[PostgreSQL] --> A
-    G[Redis] --> A
+<img width="425" alt="image" src="https://github.com/user-attachments/assets/a7ac7390-9c76-4858-a0fd-6f3bf555957d" />
 
 ## Dependencies
 fastapi==0.95.2
