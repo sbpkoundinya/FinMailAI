@@ -1,0 +1,11 @@
+@startuml
+start
+:Receive Email;
+repeat
+  :Parse Content;
+  :OCR Attachments;
+  :Classify with AI;
+  :Create Ticket;
+repeat while (More Attachments?) is No
+stop
+@enduml
