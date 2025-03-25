@@ -6,7 +6,7 @@ from .services.servicenow import create_ticket
 from .schemas import ProcessedEmail
 import logging
 
-app = FastAPI(title="Financial Email Classifier")
+app = FastAPI(title="FinMailAI")
 
 app.add_middleware(
     CORSMiddleware,
@@ -18,17 +18,17 @@ app.add_middleware(
 @app.post("/process", response_model=ProcessedEmail)
 async def process_email(file: UploadFile):
     try:
-        # 1. Parse email
+        # Parse email
         eml_content = await file.read()
         parsed = await parse_eml(eml_content)
         
-        # 2. Classify content
+        # Classify content
         classification = await classify_email(
             parsed["body"],
             [att["content"] for att in parsed["attachments"]]
         )
         
-        # 3. Create ServiceNow ticket
+        # Create ServiceNow ticket
         ticket = await create_ticket(parsed, classification)
         
         return {

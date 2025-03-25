@@ -10,7 +10,7 @@ class EmailAttachment(BaseModel):
 class ClassificationResult(BaseModel):
     is_request: bool
     category: str
-    subcategory: Optional[str]
+    subcategory: Optional[str] = None
     confidence: float
     entities: Dict[str, List[str]]
     priority: str = "medium"
@@ -21,3 +21,4 @@ class ProcessedEmail(BaseModel):
     body: str
     attachments: List[EmailAttachment]
     classification: ClassificationResult
+    ticket_id: Optional[str] = None
