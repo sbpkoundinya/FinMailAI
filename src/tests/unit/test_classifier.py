@@ -1,4 +1,8 @@
 import pytest
+import sys
+import os
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
 from app.services.classifier import classify_email
 from unittest.mock import AsyncMock
 
@@ -18,6 +22,6 @@ async def test_classify_money_movement():
         }"""}}]
     }
     
-    result = await classify_email("Payment of USD 1000", [], mock_openai)
+    result = await classify_email("Payment of USD 1000", [])
     assert result.category == "money_movement_inbound"
     assert result.priority == "high"
