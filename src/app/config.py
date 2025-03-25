@@ -1,5 +1,8 @@
 import os
-from pydantic import BaseSettings
+from pydantic_settings import BaseSettings
+from dotenv import load_dotenv
+
+load_dotenv()  # Load variables from .env file
 
 class Settings(BaseSettings):
     # Required
@@ -7,6 +10,7 @@ class Settings(BaseSettings):
     snow_instance: str
     snow_username: str
     snow_password: str
+    openai_model: str = "gpt-3.5-turbo"
     
     # Optional with defaults
     max_file_size_mb: int = 25
