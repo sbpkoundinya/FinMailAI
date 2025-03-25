@@ -1,6 +1,5 @@
 # Financial Email Classifier with OCR & ServiceNow Integration
-
-![System Architecture](docs/architecture.png)
+<img width="425" alt="image" src="https://github.com/user-attachments/assets/c59dfd17-794c-4d51-a6b3-d03ac8688c8a" />
 
 ## Model Summary
 
