@@ -40,6 +40,7 @@ sudo apt-get install tesseract-ocr poppler-utils libtesseract-dev
 
 # MacOS
 brew install tesseract poppler
+```
 
 ## Docker Deployment
 
@@ -48,6 +49,7 @@ docker-compose up -d --build
 
 # Verify
 curl http://localhost:8000/health
+```
 
 ## ServiceNow Integration
 ## Configuration
@@ -59,10 +61,8 @@ SNOW_USERNAME=api_user
 SNOW_PASSWORD=your_password
 
 ## Ticket Mapping
-**Category	    ServiceNow Assignment Group	  SLA**
-money_movement	payments_processing	          2h
-bank_guarantee	trade_finance               	24h
-phishing	      security_ops	                15m
+<img width="346" alt="image" src="https://github.com/user-attachments/assets/4c37195a-4f2f-4b8a-b0ef-b72f15244cb0" />
+```
 
 ## Test Strategy
 
@@ -90,6 +90,7 @@ pip install -r requirements.txt
 
 # Run service (dev mode)
 uvicorn src.app.main:app --reload
+```
 
 ## Log Samples
 
@@ -97,6 +98,7 @@ uvicorn src.app.main:app --reload
 2023-11-21 14:30:45 [INFO] Processed email from invoices@acme.com
 2023-11-21 14:31:02 [WARNING] Low OCR confidence (62%) on attachment contract.pdf
 2023-11-21 14:31:15 [ERROR] ServiceNow API timeout (URL: /api/now/table/incident)
+```
 
 ## Troubleshooting
 
@@ -109,3 +111,5 @@ curl -v http://localhost:8000/process -F file=@test.eml
 
 # View logs
 docker-compose logs -f
+```
+
