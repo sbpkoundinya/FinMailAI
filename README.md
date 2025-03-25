@@ -66,11 +66,13 @@ SNOW_PASSWORD=your_password
 
 ## Test Strategy
 
+```
         [E2E] 10%
        /      \
    [Integration] 20%
       /          \
 [Unit Tests]    70%
+```
 
 ## Logging Strategy
 
