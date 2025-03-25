@@ -10,11 +10,11 @@ An AI-powered pipeline that:
 4. Automates ServiceNow ticketing with SLA-based routing
 
 ## Key Features
--> Email Classification: Categorizes emails into request and sub-request types.
--> Field Extraction: Extracts key financial data from email body and attachments.
--> Duplicate Detection: Identifies and flags duplicate emails.
--> Confidence Scoring: Provides a confidence score for each classification.
--> Dynamic Priority Source Handling: Determines whether to extract data from the email body, attachment, or both.
+1. Email Classification: Categorizes emails into request and sub-request types.
+2. Field Extraction: Extracts key financial data from email body and attachments.
+3. Duplicate Detection: Identifies and flags duplicate emails.
+4. Confidence Scoring: Provides a confidence score for each classification.
+5. Dynamic Priority Source Handling: Determines whether to extract data from the email body, attachment, or both.
 
 ## Tech Stack
 <img width="425" alt="image" src="https://github.com/user-attachments/assets/a7ac7390-9c76-4858-a0fd-6f3bf555957d" />
