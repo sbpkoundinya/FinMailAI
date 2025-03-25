@@ -48,9 +48,10 @@ curl http://localhost:8000/health
 
 ```ini
 # .env
-SNOW_INSTANCE=https://your-instance.service-now.com
-SNOW_USERNAME=api_user
-SNOW_PASSWORD=your_password
+OPENAI_API_KEY=your_api_key
+SNOW_INSTANCE=dummy_instance
+SNOW_USERNAME=dummy_username
+SNOW_PASSWORD=dummy_password
 
 ## Ticket Mapping
 <img width="346" alt="image" src="https://github.com/user-attachments/assets/4c37195a-4f2f-4b8a-b0ef-b72f15244cb0" />
